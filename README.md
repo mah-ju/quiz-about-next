@@ -39,11 +39,7 @@ Users can navigate through questions, select answers, and their responses are st
 ## Overview 
 
 
-<img src="./public/screen.png">
-
-### Mobile
-
-<img src="./public/overview-new-gif.gif" width="200px">
+<img src="./public/overview-new-gif.gif" width="300px">
 
 
 
