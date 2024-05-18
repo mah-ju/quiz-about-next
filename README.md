@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Quiz App 💭
+<div align="justify">
 
-## Getting Started
+Quiz App developed as a study project to enhance my React skills and test users' knowledge on Next.js documentation topics. This project serves both as a learning tool for myself and a platform for users to evaluate their understanding of Next.js
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Users can navigate through questions, select answers, and their responses are stored for evaluation. Upon completion, a modal displays their final score, performance message, and a comparison between their answers and the correct ones for review.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+</div>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features 💡
 
-## Learn More
+<div align="justify">
 
-To learn more about Next.js, take a look at the following resources:
+- **Stored Responses**: The application stores user responses throughout the quiz for evaluation upon completion.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Completion Modal**: Upon completing the quiz, users are presented with a modal displaying their final score and a comparison between their answers and the correct answers.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Performance Feedback**: Based on the user's score, the modal displays a corresponding message to provide feedback on their performance.
 
-## Deploy on Vercel
+- **Progress Bar**: A visual indicator shows the user's progress towards completing the quiz
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Response Alert**: An alert prevents users from advancing to the next question without selecting an answer.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+ </div>
+
+## Technologies ⚙️
+
+![Static badge](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge)
+
+![Static badge](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+
+![Static badge](https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square)
+
+![Static Badge](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+## Overview 
+
+
+<img src="./public/screen.png">
+
+### Mobile
+
+<img src="./public/overview-new-gif.gif" width="200px">
+
+
+
+
