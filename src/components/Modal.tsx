@@ -1,11 +1,12 @@
 import { CircleX } from "lucide-react";
+import { questions } from "@/data/questions";
 
 type Props = {
   onClose: () => void;
   userAnswers: number[];
 };
 export const Modal = ({ onClose, userAnswers }: Props) => {
-  let rightAnswers = [2, 1, 1, 3, 2, 2, 3, 3, 0, 3];
+  const rightAnswers = questions.map((question) => question.answer);
 
   const countMatches = (rightAnswers: number[], userAnswers: number[]) => {
     let matches = 0;
