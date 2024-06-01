@@ -36,6 +36,7 @@ export const Modal = ({ onClose, userAnswers }: Props) => {
       className="w-full h-screen bg-black/80 fixed flex justify-center items-center"
     >
       <div
+        onClick={(e) => e.stopPropagation()}
         className="bg-myBlue w-[80%] md:w-[70%] pb-10 
         pt-6 
         px-4

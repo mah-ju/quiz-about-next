@@ -11,7 +11,13 @@ export default function Home() {
   const [showModal, setShowModal] = useState(false);
 
   const nextQuestion = () => {
-    setCurrentQuestion((prevQuestion) => (prevQuestion + 1) % questions.length);
+    if (userAnswers === null || userAnswers === undefined) {
+      alert("Please, choose one option!");
+    } else {
+      setCurrentQuestion(
+        (prevQuestion) => (prevQuestion + 1) % questions.length
+      );
+    }
   };
 
   const prevQuestion = () => {
@@ -20,15 +26,9 @@ export default function Home() {
     );
   };
 
-  const displayModal = () => {
-    setShowModal(true);
+  const toggleModal = () => {
+    setShowModal((prev) => !prev);
   };
-
-  const closeModal = () => {
-    setShowModal(false);
-  };
-
-  // armazenar as respostas dos usuários
 
   const handleAnswer = (answer: number) => {
     setUserAnswers((prevAnswers) => {
@@ -64,10 +64,10 @@ export default function Home() {
           showPrevButton={currentQuestion > 0}
           userClickAnswer={userAnswers[currentQuestion]}
           showFinishButton={currentQuestion === questions.length - 1}
-          openModal={displayModal}
+          openModal={toggleModal}
         />
       </div>
-      {showModal && <Modal onClose={closeModal} userAnswers={userAnswers} />}
+      {showModal && <Modal onClose={toggleModal} userAnswers={userAnswers} />}
     </div>
   );
 }
